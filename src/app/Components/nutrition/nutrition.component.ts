@@ -31,18 +31,9 @@ export class NutritionComponent implements OnInit {
   ingr!: string[];
   invalid! : boolean;
 
-  // CONSTRUCTOR
-  constructor(@Inject(FormBuilder) fb: FormBuilder, public NutritionServiceService: NutritionServiceService,
-  private router: Router)
+  constructor(fb: FormBuilder, public NutritionServiceService: NutritionServiceService)
     {
-      const data = this.NurtitionModel;
-      if (data == null) {
-        this.ingr = [];
-      } else
-      {
-        this.NurtitionModel = data;
-        this.ingr = data.ingr;
-      }
+    
     this.NutritionFormPOST = fb.group({
       Inger : [this.ingr, [
         Validators.required,Validators.minLength(3)

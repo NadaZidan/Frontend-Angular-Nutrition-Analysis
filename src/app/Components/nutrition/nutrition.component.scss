@@ -69,20 +69,28 @@ body {
 }
 
 #contact {
-  background: #F9F9F9;
+  background: rgba(0, 0, 0, 0.425);
   padding: 25px;
   margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #contact h3 {
+  color: #fff;
   display: block;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
 }
+#contact tr{
+  color: #fff;
+}
+#contact p{
+  color: #fff;
+}
 
 #contact h4 {
+  color: #fff;
   margin: 5px 0 15px;
   display: block;
   font-size: 13px;
@@ -92,7 +100,6 @@ body {
 fieldset {
   border: medium none !important;
   margin: 0 0 10px;
-  min-width: 100%;
   padding: 0;
   width: 100%;
 }
@@ -128,8 +135,9 @@ fieldset {
 
 #contact button[type="submit"] {
   cursor: pointer;
+  
   width: 100%;
-  border: none;
+  
   background: #4CAF50;
   color: #FFF;
   margin: 0 0 5px;
